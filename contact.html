@@ -1,0 +1,65 @@
+<html>
+<head>
+<title> Contact Us </title>
+<style>
+a{text-decoration:none;font-size:22;}
+input{width:30%;height:6%;}
+button{font:white;width:10%;height:7%;margin-top:-1460px;background-color:lightblue;}
+#A1{margin-left:840px;margin-top:-139px;border-style:hidden;}
+#A2{margin-left:-800px;margin-top:100px;border:hidden;}
+</style>
+<script>
+ function check(){
+var str=document.getElementById('pswd').value;
+ if (str.match(/[a-z]/g) &&
+     str.match(/[A-Z]/g) &&
+     str.match(/[0-9]/g) &&
+     str.match(/[^a-zA-Z\d]/g) &&
+     str.length>=8)
+     window.open("./home.html")
+     
+ else 
+    alert("password is invalid \n GUIDELINES \n *Password should be equal or greater than 8 characters. \n *Password should contain at least 1 lowercase alphabet,1 uppercase alphabet. \n*Password should contain  aleast one numeric value and one special character.")
+ }
+
+    </script>
+</head>
+<img src="logo.jpg" alt="logo" height="20%" width="15%"/>
+<div id="A1">
+<p>
+<center> <a href="index.html"> Home </a>
+&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="About us.html"> About </a>
+&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="contact.html"> Contact </a>
+&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="Gallery.html"> Gallery </a> </center> </p>
+<div>
+<body bgcolor="gray">
+<div id="A2">
+<center>
+<h1> <font size="7" color="white"> Contact Us  </font> </h1>
+<hr> </hr>
+&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp
+<form> <font color="white">
+<label for="Name"> NAME: </label>
+<input type="text" id="pswd" placeholder="Enter your Name"> <br> </br>
+<label for="Name"> PHONE: </label>
+<input type="text" id="pswd" placeholder="Enter your number" minlength="10" maxlength="10" > <br> </br>
+<label for="Name"> E MAIL: </label>
+<input type="text" id="pswd" placeholder="Enter your E Mail Address"> <br> </br>
+<div id="a" style="height:215%;width:100%;margin-left:-25px;"> <label for="Name"> Your order: </label>
+<input type="text" id="pswd" placeholder="Type a message"> <br> </br> </div>
+</form> </font>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<button type="button" onclick="check()"> SEND MESSAGE </button> </center>
+</div>
+</body>
+</html>
